@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Name a NPC!</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #1e1e2f;
+      color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em;
+    }
+
+    h1 {
+      color: #ffcc00;
+    }
+
+    form {
+      background: #2e2e3f;
+      padding: 2em;
+      border-radius: 12px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    label {
+      display: block;
+      margin-top: 1em;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 0.7em;
+      margin-top: 0.5em;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    input {
+      background: #444;
+      color: #fff;
+    }
+
+    button {
+      background: #ffcc00;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 1.5em;
+    }
+
+    button:hover {
+      background: #ffdd33;
+    }
+  </style>
+</head>
+<body>
+  <h1>Submit Your NPC to CitiTek</h1>
+  <p>Suggest a character name and get credited in the game!</p>
+  
+  <form action="https://formspree.io/f/mkgrdjpa" method="POST">
+    <label for="npc-name">NPC Name</label>
+    <input type="text" name="npc-name" id="npc-name" required placeholder="e.g. Turbo Rick"/>
+
+    <label for="your-name">Your Name (for credits)</label>
+    <input type="text" name="your-name" id="your-name" required placeholder="e.g. Alex D."/>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
