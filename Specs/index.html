@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Specs | CitiTek</title>
+  <style>
+    :root {
+      --primary-color: #00d1ff;
+      --background-color: #0f0f0f;
+      --text-color: #e0e0e0;
+      --accent-color: #1f1f1f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--accent-color);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: var(--primary-color);
+    }
+
+    nav a {
+      margin-left: 1rem;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      margin-top: 2rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      margin-bottom: 0.8rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CitiTek</h1>
+    <nav>
+      <a href="https://hosaynotjoseph.github.io/CitiTek/">Discord</a>
+      <a href="https://hosaynotjoseph.github.io/CitiTek/NameTheNPC/">Name the NPC</a>
+      <a href="https://hosaynotjoseph.github.io/CitiTek/About/">AboutC</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Original Design Specifactions</h2>
+    <p>
+      The original version of <strong>CitiTek</strong> has been designed under restrictions given by the CPU created by <a href="https://www.youtube.com/channel/UCeRXQ_B5WZD3yjPly45myvg" style="color: var(--primary-color);">James Sharman</a>. In his videos he goes into great detail of every stage of designing and making the CPU, from the clock to the NES controller inputs, you should seriously consider giving him a subscribe!
+    </p>
+
+    <h2>Features of the CPU</h2>
+    <ul>
+      <li><strong>Sound:</strong> Four channel sound card allowing for 4-note polyphony.</li>
+      <li><strong>SD Card support:</strong> An SD card running under fat-16 for the computer's seccondary storage running under SPI.</li>
+      <li><strong>VGA Card:</strong> The VGA card can output 640x480 vga with 90x80 visible 8x8 pixel tiles.</li>
+      <li><strong>Controller support:</strong> The CPU can use a NES controller for game input.</li>
+      <li><strong>Fast speed:</strong> The CPU runs at 4.0mhz under normal running conditions.</li>
+    </ul>
+
+    <h2>Challenges</h2>
+    <p>
+      Composing the music for the game has been a chalange due to the fact there is only 4-note polyphony, which has made the trade-off between good music and sound effects difficult. In the end I have decided to keep it up to the user. They can simply switch between having music and sound effects, if I implement them.
+    </p>
+    <p>
+      Creating the artwork is not that easy either, as I am conformed to a grid of 8x8 tiles which does make positioning tricky! The mockups I have made for the screen and the like are looking great though! I eventually need to draw some buildings, which is not easy in isometric art! If you would like to, you can send your ideas for buildings on the Discord Server, and if they are cool I will add them to the game!
+    </p>
+    <p>
+    If you would like to contribute to the project, consider <a href="https://hosaynotjoseph.github.io/CitiTek/NameTheNPC/" style="color: var(--primary-color)">naming an NPC</a>, and if you would like to watch the game progress, join the <a href="https://hosaynotjoseph.github.io/CitiTek" style="color: var(--primary-color)">Discord</a> server and join the community!
+    </p>
+ </main>
+
+  <footer>
+    &copy; 2025 HosayNotJoseph | <a href="https://hosaynotjoseph.github.io/CitiTek/" style="color: #999;">Discord</a>
+  </footer>
+</body>
+</html>
